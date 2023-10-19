@@ -11,8 +11,32 @@
 </head>
 
 <body>
-    <div id="container--main">
+    <div class='toggle-switch'>
+        <input type="checkbox" id="checkboxInput">
+        <label for="checkboxInput" class="toggleSwitch">
+        </label>
+    </div>
+    <script>
+        const checkboxInput = document.getElementById("checkboxInput");
 
+        checkboxInput.addEventListener("change", function () {
+            if (checkboxInput.checked) {
+                document.documentElement.style.setProperty("--mainTextColor", "var(--mainTextColor-light)");
+                document.documentElement.style.setProperty("--secondaryTextColor", "var(--secondaryTextColor-light)");
+                document.documentElement.style.setProperty("--mainLinkColor", "var(--mainLinkColor-light)");
+                document.documentElement.style.setProperty("--mainBorderColor", "var(--mainBorderColor-light)");
+                document.documentElement.style.setProperty("--mainBgColor", "var(--mainBgColor-light)");
+            } else {
+                document.documentElement.style.setProperty("--mainTextColor", "var(--mainTextColor-dark)");
+                document.documentElement.style.setProperty("--secondaryTextColor", "var(--secondaryTextColor-dark)");
+                document.documentElement.style.setProperty("--mainLinkColor", "var(--mainLinkColor-dark)");
+                document.documentElement.style.setProperty("--mainBorderColor", "var(--mainBorderColor-dark)");
+                document.documentElement.style.setProperty("--mainBgColor", "var(--mainBgColor-dark)");
+            }   
+        });
+
+    </script>
+    <div id="container--main">
         <section id="wrapper--hero" class="section--page">
             <div id="profile-pic">
                 <img id="pfp" src="./assets/images/profile_pic.JPG">
@@ -128,7 +152,7 @@
             <div class="line-break"></div>
 
             <div class="card--project-history">
-                <strong>🚧 Instagram Bot | UNIFIVE DIGITAL</strong>
+                <strong>🤖 Instagram Bot </strong>
                 <p>Bot for growth and analytic</p>
                 <ul>
                     <li><strong>Automated</strong> tasks on Instagram, such as liking posts, commenting on
@@ -146,23 +170,28 @@
             <h2>Certifications</h2>
 
             <div class="card--project">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/2UH94438B7JW" target="_blank"><span>Data Structures:</span></a>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/2UH94438B7JW"
+                    target="_blank"><span>Data Structures:</span></a>
             </div>
 
             <div class="card--project">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/RH3BDCTKT6F7" target="_blank"><span>HTML, CSS, and JavaScript </span></a>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/RH3BDCTKT6F7"
+                    target="_blank"><span>HTML, CSS, and JavaScript </span></a>
             </div>
 
             <div class="card--project">
-                <a href="https://lj-phoenix.github.io/certificates/#/30-days-of-code/6206dfc2e71f394940206e4a" target="_blank"><span>30 Days Of Code</span></a>
+                <a href="https://lj-phoenix.github.io/certificates/#/30-days-of-code/6206dfc2e71f394940206e4a"
+                    target="_blank"><span>30 Days Of Code</span></a>
 
             </div>
             <div class="card--project">
-                <a href="https://coursera.org/share/4b872ba012d64aba33faa1df99ee45e3" target="_blank"><span>Data Analysis for ML</span></a>
+                <a href="https://coursera.org/share/4b872ba012d64aba33faa1df99ee45e3" target="_blank"><span>Data
+                        Analysis for ML</span></a>
             </div>
 
             <div class="card--project">
-                <a href="https://www.coursera.org/account/accomplishments/verify/3R47R9XPV3DL" target="_blank"><span>SQL</span></a>
+                <a href="https://www.coursera.org/account/accomplishments/verify/3R47R9XPV3DL"
+                    target="_blank"><span>SQL</span></a>
             </div>
 
         </section>
